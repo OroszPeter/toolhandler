@@ -6,10 +6,10 @@ const config = {
 		// Használjuk a Netlify adaptert
 		adapter: adapter({
 			// Edge functions használata a jobb teljesítményért
-			edge: true,
+			edge: false,
 			
 			// Split the app into smaller chunks
-			split: true
+			split: false
 		})
 	}
 };
