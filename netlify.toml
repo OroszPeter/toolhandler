@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "build"
-  functions = "functions"
+  publish = ".netlify/functions-internal"
+  functions = ".netlify/functions-internal"
 
 [dev]
   command = "npm run dev"

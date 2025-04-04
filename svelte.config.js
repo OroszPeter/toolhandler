@@ -9,7 +9,11 @@ const config = {
 			edge: false,
 			
 			// Split the app into smaller chunks
-			split: false
+			split: false,
+			external: [],
+			esbuild: {
+				target: 'node16'
+			}
 		})
 	}
 };
