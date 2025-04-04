@@ -1,0 +1,1 @@
+export const load = event => ({user: event.locals.user})

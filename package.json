@@ -1,0 +1,39 @@
+{
+	"name": "szamonkeres",
+	"private": true,
+	"version": "0.0.1",
+	"type": "module",
+	"scripts": {
+		"dev": "vite dev",
+		"open": "vite dev --open",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"db:push": "drizzle-kit push",
+		"db:migrate": "drizzle-kit migrate",
+		"db:studio": "drizzle-kit studio"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^4.0.0",
+		"@sveltejs/adapter-netlify": "^5.0.0",
+		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@types/better-sqlite3": "^7.6.12",
+		"dotenv": "^16.4.7",
+		"drizzle-kit": "^0.30.2",
+		"svelte": "^5.0.0",
+		"vite": "^6.0.0"
+	},
+	"dependencies": {
+		"@node-rs/argon2": "^2.0.2",
+		"@oslojs/crypto": "^1.0.1",
+		"@oslojs/encoding": "^1.1.0",
+		"@supabase/supabase-js": "^2.49.4",
+		"better-sqlite3": "^11.8.0",
+		"chart.js": "^4.4.8",
+		"drizzle-orm": "^0.41.0",
+		"jquery": "^3.7.1",
+		"postgres": "^3.4.5",
+		"uuid": "^11.1.0"
+	}
+}
