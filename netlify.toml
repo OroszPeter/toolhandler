@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
-  publish = "build"
-  edge_functions = true
+  publish = ".netlify/functions-internal/server"
+  edge_functions = "edge-functions"
 
 [dev]
   command = "npm run dev"
