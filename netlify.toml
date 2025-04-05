@@ -1,7 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ".netlify/functions-internal"
-  functions = ".netlify/functions-internal"
+  publish = "build"
 
 [dev]
   command = "npm run dev"
@@ -9,4 +8,9 @@
   targetPort = 5173
 
 [functions]
-  node_bundler = "esbuild" 
+  node_bundler = "esbuild"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 
